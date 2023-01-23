@@ -19,7 +19,7 @@
 #define STEPDELAY 50
 
 // Declare our NeoPixel strip object:
-Adafruit_NeoPixel strip(LED_COUNT, LED_PIN, NEO_GRBW + NEO_KHZ400);
+Adafruit_NeoPixel strip(LED_COUNT, LED_PIN, NEO_GRBW + NEO_KHZ800);
 // Argument 1 = Number of pixels in NeoPixel strip
 // Argument 2 = Arduino pin number (most are valid)
 // Argument 3 = Pixel type flags, add together as needed:
@@ -50,7 +50,7 @@ void loop() {
   colorBucket(strip.Color(  0,   0, 255)     , STEPDELAY); // Blue
   colorBucket(strip.Color(  0,   0,   0, 255), STEPDELAY); // True white (not RGB white)
   
-  /*
+  
   colorWipe(strip.Color(255,   0,   0)     , STEPDELAY); // Red
   colorWipe(strip.Color(  0, 255,   0)     , STEPDELAY); // Green
   colorWipe(strip.Color(  0,   0, 255)     , STEPDELAY); // Blue
